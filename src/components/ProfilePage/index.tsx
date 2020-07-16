@@ -1,6 +1,15 @@
 import React from 'react';
 
-import { Container, Banner, Avatar, ProfileData, LocationIcon, CakeIcon, Followage } from './styles';
+import {
+  Container,
+  Banner,
+  Avatar,
+  ProfileData,
+  LocationIcon,
+  CakeIcon,
+  Followage,
+  EditButton
+} from './styles';
 
 const ProfilePage: React.FC = () => {
   return (
@@ -8,9 +17,9 @@ const ProfilePage: React.FC = () => {
       <Banner>
         <Avatar />
       </Banner>
-      
+
       <ProfileData>
-        {/* <EditButton outlined>Editar Perfil</EditButton> */}
+        <EditButton outlined>Editar Perfil</EditButton>
 
         <h1>Israel Afonso</h1>
         <h2>@IACarvalho</h2>
@@ -35,12 +44,12 @@ const ProfilePage: React.FC = () => {
             seguindo <strong>05</strong>
           </span>
           <span>
-             <strong>10 </strong> seguidores
+            <strong>10 </strong> seguidores
           </span>
         </Followage>
       </ProfileData>
     </Container>
   );
-}
+};
 
 export default ProfilePage;
