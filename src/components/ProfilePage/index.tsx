@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Feed from '../Feed'
+
 import {
   Container,
   Banner,
@@ -8,7 +10,7 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
-  EditButton
+  EditButton,
 } from './styles';
 
 const ProfilePage: React.FC = () => {
@@ -48,6 +50,7 @@ const ProfilePage: React.FC = () => {
           </span>
         </Followage>
       </ProfileData>
+      <Feed />
     </Container>
   );
 };
